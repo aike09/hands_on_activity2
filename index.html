@@ -3,30 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMCC-CCIS WEEK</title>
     <link rel="stylesheet" href="style.css">
-    <title>SMCC-CCIS Weeb 2026</title>
-"
-
-<header id="top-header" class="top-header">
-    <h1>SMCC-CCIS Week 2026 - Campus Event Showcase</h1>
-    <p>Celebrating innovation, technology, and collaboration across the campus.</p>
-</header>
-
-<nav>
-<a href="#Overview">Overview</a>
-<a href="#Schedule">Schedule</a>
-<a href="#Location">Location</a>
-<a href="#Registration">Registration</a>
-<a href="#FAQ">FAQ</a>
-<a href="#Tech Demo">Tech Demo</a>
-"
-</nav>
- 
-
 </head>
-
 <body>
+    <header>
+        <h1>SMCC-CCIS Week 2026 - Campus Event Showcase 🎓🎉</h1>
+        <p>Celebrating innovation, technology, and collaboration across the campus.</p>
+    </header>
     
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#location">Location</a>
+        <a href="#registration">Registration</a>
+        <a href="#faq">FAQ</a>
+        <a href="#tech-demo">Tech Demo</a>
+    </nav>
+
+    <div class="container">
+        
+        <main class="main-content">
+            
+            <section id="overview" class="card">
+                <h2>Event Overview ★</h2>
+                <p><strong>SMCC-CCIS Week 2026</strong> is an annual campus event that highlights student projects, programming skills, innovation, cybersecurity awareness, and collaboration among future IT professionals.</p>
+                <p>Join us for a week of learning, networking, and fun & excitement as we celebrate technology in education. ✓</p>
+                <div class="image-placeholder">
+                    <img src="images/ccisweek-banner.jpg" alt="SMCC-CCIS Week 2026 Banner Layout/Courses Offered">
+                </div>
+            </section>
+
+            <section id="schedule" class="card">
+                <h2>Event Schedule ✓</h2>
+                <p>Here is the simplified schedule of activities:</p>
+                <ul>
+                    <li><strong>Day 1</strong> – Opening Program and Keynote Talks</li>
+                    <li><strong>Day 2</strong> – Coding Hackathon</li>
+                    <li><strong>Day 3</strong> – Robotics and IoT Exhibition</li>
+                    <li><strong>Day 4</strong> – Cybersecurity Awareness Session</li>
+                    <li><strong>Day 5</strong> – Project Showcase and Awarding Ceremony 🏆</li>
+                </ul>
+            </section>
+
+            <section id="location" class="card">
+                <h2>Event Location & Map</h2>
+                <p>All events will be held at the <strong>SMCC Main Campus – IT Building</strong>. Use the embedded map below to find the location easily:</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4653.242734670887!2d125.34302317776996!3d8.986689121791123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1782915988308!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </section>
+
+            <section id="registration" class="card">
+                <h2>Event Registration Form 📝</h2>
+                <p>Please complete the form below to register for SMCC-CCIS Week 2026.</p>
+                
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your complete name" required minlength="3">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-id">Student ID Number:</label>
+                        <input type="text" id="student-id" name="student-id" placeholder="Example: 202600123" required pattern="[0-9]{6,12}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Contact Number:</label>
+                        <input type="text" id="contact" name="contact" placeholder="Example: 09123456789" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthdate">Birthdate:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="arrival-time">Preferred Arrival Time:</label>
+                        <input type="time" id="arrival-time" name="arrival-time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year-level">Year Level:</label>
+                        <select id="year-level" name="year-level" required>
+                            <option value="">Select Year Level</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Participant Type:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="participant-type" value="Student" checked> Student</label>
+                            <label><input type="radio" name="participant-type" value="Faculty"> Faculty</label>
+                            <label><input type="radio" name="participant-type" value="Guest"> Guest</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Event/s to Join:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="event" value="Coding Hackathon"> Coding Hackathon</label>
+                            <label><input type="checkbox" name="event" value="Tech Quiz Bowl"> Tech Quiz Bowl</label>
+                            <label><input type="checkbox" name="event" value="Robotics Exhibition"> Robotics Exhibition</label>
+                            <label><input type="checkbox" name="event" value="Project Showcase"> Project Showcase</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file-upload">Upload Proof of Registration or School ID:</label>
+                        <input type="file" id="file-upload" name="file-upload">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Reason for Joining:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your reason for joining the event..." required></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-submit">Submit Registration</button>
+                        <button type="reset" class="btn btn-clear">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="faq" class="card">
+                <h2>Frequently Asked Questions</h2>
+                <p>Use the button below to interact with the page:</p>
+                <button type="button" class="btn btn-submit" id="toggle-faq-btn">Toggle FAQ Visibility</button>
+                
+                <div id="faq-content" class="faq-list">
+                    <div class="faq-item">
+                        <h4>1. Is the event open to all students?</h4>
+                        <p>Yes, the event is open to all departments and year levels.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>2. Do I need to register?</h4>
+                        <p>Yes, registration is required for competitions, workshops, and project showcases.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>3. Is there a registration fee?</h4>
+                        <p>No, all SMCC-CCIS Week 2026 activities are free of charge.</p>
+                    </div>
+                </div>
+            </section>
+
+            </section>
+
+            <section id="tech-demo" class="card">
+                <h2>Tech Demo & Developer Notes</h2>
+                
+                <h3>Sample Command Using &lt;pre&gt; and &lt;code&gt;</h3>
+                <div class="code-block">
+<pre><code>// Clone the SMCC-CCIS Week repository
+git clone https://github.com/example/ccisweek2026.git
+
+// Install dependencies
+npm install
+
+// Start development server
+npm run dev</code></pre>
+                </div>
+                <p>To save your changes, press <kbd>Ctrl</kbd> + <kbd>S</kbd>. Example system output using &lt;samp&gt;: <samp class="success">Build successful. No errors found.</samp></p>
+
+                <h3>Registration URL Example</h3>
+                <p>Example registration URL with encoded spaces and symbols:</p>
+                <div class="code-block text-center">
+                    <code>https://myschool.edu/events/register?event=SMCC%20CCIS%20Week%202026&amp;section=A</code>
+                </div>
+                <p>Here, <strong>%20</strong> represents a space character in the URL structure.</p>
+
+                <h3>HTML vs XHTML Example</h3>
+                <p>Compare the following markup language syntax fragments:</p>
+                <div class="code-block">
+<pre><code>&lt;!-- HTML style --&gt;
+&lt;br&gt;
+&lt;img src="images/logo.png" alt="Event Logo"&gt;
+
+&lt;!-- XHTML style --&gt;
+&lt;br /&gt;
+&lt;img src="images/logo.png" alt="Event Logo" /&gt;</code></pre>
+                </div>
+                <p class="small-text">XHTML requires properly closed elements/tags, lowercase element names, and quoted attribute structures.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h3>Event Info & Contacts</h3>
+                <p>SMCC-CCIS Week 2026 is organized by the <strong>College of Computing and Information Sciences</strong>.</p>
+                <p>For inquiries, email: <a href="mailto:ccisweek@myschool.edu"><strong>ccisweek@myschool.edu</strong></a></p>
+                
+                <h4>Event Highlights:</h4>
+                <ul>
+                    <li>Live coding sessions</li>
+                    <li>Industry speakers</li>
+                    <li>Project exhibits</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Character Encoding</h3>
+                <p>This page configuration targets the UTF-8 charset character encoding block, traditionally initialized as:</p>
+                <div class="code-block text-center">
+                    <code>&lt;meta charset="UTF-8"&gt;</code>
+                </div>
+                <p class="small-text">Special characters and entities display: © 2026 SMCC-CCIS Week · Made with ♥</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>SMCC-CCIS Week 2026 – Campus Event Showcase | Made with HTML, CSS & JavaScript ✓</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-faq-btn');
+        const faqContent = document.getElementById('faq-content');
+
+        toggleBtn.addEventListener('click', () => {
+            if (faqContent.style.display === 'none' || faqContent.style.display === '') {
+                faqContent.style.display = 'block';
+            } else {
+                faqContent.style.display = 'none';
+            }
+        });
+    </script>
 
 </body>
 </html>

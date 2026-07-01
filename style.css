@@ -1,12 +1,311 @@
-.top-header {
-    background-color: green;
-    color: white;
-    text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #009639; /* Iconic School Green */
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 nav {
-    color: green;
-    text-align: left;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 0.5rem 10%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #009639;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e1e4e8;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.card h2, .card h3, .card h4 {
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.card ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.image-placeholder {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #009639;
+    background-color: #fff;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.form-group input[type="file"] {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.85rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-submit {
+    background-color: #009639;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #007a2e;
+}
+
+.btn-clear {
+    background-color: #555555;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #333333;
+}
+
+#toggle-faq-btn {
+    margin-bottom: 1rem;
+}
+
+.faq-list {
+    margin-top: 1rem;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid #009639;
+}
+
+.faq-item h4 {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.code-block {
+    background-color: #052e16; /* Deep Jungle/Forest Green code box */
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.code-block pre, .code-block code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+kbd {
+    background-color: #e1e4e8;
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.85rem;
+    font-family: inherit;
+}
+
+samp.success {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+footer {
+    background-color: #009639;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack into a single column layout on mobile screens */
+        margin: 1rem auto;
+    }
     
+    nav {
+        padding: 0.5rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
+
+footer {
+    background-color: #009639; 
+    color: #ffffff;            
+    text-align: center;       
+    padding: 1.2rem 1rem;      
+    margin-top: 3rem;          
+    width: 100%;              
 }
