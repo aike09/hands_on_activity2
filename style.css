@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #009639; /* Iconic School Green */
+    background-color: #009639; 
     color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
@@ -239,7 +239,7 @@ nav a:hover {
 }
 
 .code-block {
-    background-color: #052e16; /* Deep Jungle/Forest Green code box */
+    background-color: #052e16; 
     color: #e2e8f0;
     padding: 1rem;
     border-radius: 5px;
@@ -288,7 +288,7 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr; /* Stack into a single column layout on mobile screens */
+        grid-template-columns: 1fr; 
         margin: 1rem auto;
     }
     
